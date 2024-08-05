@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>weManage</title>
+    <link rel="icon" type="image/png" href="img/logo (2).png">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <div class="container">
+        <nav>
+          <a href="#">  <img src="img/logo (2).png" class="logo" alt="logo"></a>
+            <h1 id="current-time"></h1>
+            <ul>
+                <li><a href="#dead">deadline</a></li>
+                <li><a href="#efficiencySection">efficiency</a></li>
+                <li><a href="#cs">contact us</a></li>
+            </ul>
+        </nav>
+        <div class="box">
+            <div class="right">
+                <div class="project-container">
+                    <h1>Projects</h1>
+                    <div class="project-input">
+                        <input type="text" id="projectInput" placeholder="Add a new project...">
+                        <input type="date" id="projectDate" placeholder="Select due date">
+                        <button id="addProjectButton">Add Project</button>
+                    </div>
+                    <ul id="projectList"></ul>
+                </div>
+              </div>
+            <div class="left">
+                <div class="task-container">
+                    <h1>Tasks</h1>
+                    <div class="todo-input">
+                        <input type="text" id="taskInput" placeholder="Add a new task...">
+                        <button id="addTaskButton">Add Task</button>
+                    </div>
+                    <ul id="taskList"></ul>
+                </div>
+            </div>
+        </div> 
+         
+        <div class="box2" id="dead">
+            <h2>Upcoming Deadlines</h2>
+            <table id="deadlineTable">
+                <thead>
+                    <tr>
+                        <th>Project</th>
+                        <th>Due Date</th>
+                        <th>Days Left</th>
+                    </tr>
+                </thead>
+                <tbody id="deadlineList"></tbody>
+            </table>
+        </div>
+        <div class="boxe" id="efficiencySection">
+            
+
+            <div id="projectsInProgress" class="metric big">Projects in Progress: 0</div>
+            <div id="tasksInProgress" class="metric">Tasks in Progress: 0</div>
+            <div id="projectsCompleted" class="metric">Projects Completed: 0</div>
+        
+        </div>
+
+        <div class="box3" id="cs">
+            <div class="contact">
+                <div class="ccon">
+                    <h1>Contact <span>Us</span></h1>
+                    <div class="items">
+                        
+                        <div class="contact-info">
+                            <div class="contact-item">
+                                <a href="tel:+916379523924">
+                                    <div class="icon-circle">
+                                        <img src="img/phone.jpg" alt="Phone Icon">
+                                    </div>
+                                    <h3>Call me on</h3>
+                                    <p>+91 6379523924</p>
+                                    <p>+91 9901483021</p>
+                                </a>
+                            </div>
+                            <div class="contact-item">
+                                <a href="mailto:akuma.shirin@gmail.com">
+                                    <div class="icon-circle">
+                                        <img src="img/email.jpg" alt="Email Icon">
+                                    </div>
+                                    <h3>Email us at</h3>
+                                    <p>akuma.shirin@gmail.com</p>
+                                </a>
+                                <a href="mailto:Shwethababu1007@gmail.com">
+                                    <p>Shwethababu1007@gmail.com</p>
+                                </a>
+                            </div>
+                            <div class="contact-item">
+                                <a href="https://github.com/winterwoods17">
+                                    <div class="icon-circle">
+                                        <img src="img/git.jpg" alt="GitHub Icon">
+                                    </div>
+                                    <h3>Reach us out at</h3>
+                                    <p>winterwoods17</p>
+                                </a>
+                                <a href="https://github.com/Shwethababu">
+                                    <p>Shwethababu</p>
+                                </a>
+                            </div>
+                        </div>
+        
+                        
+                        <div class="for">
+                            <form method="post" name="form" action="https://script.google.com/macros/s/AKfycbz_i0_alKymUFM_M1OKQD45QnleXPWbNZaF90GtCe3IZic5cLb8f8Ek0JoIEN6w-5r2Fg/exec">
+                                <div class="name">
+                                    <input type="text" name="name" placeholder="Your Name" required>
+                                    <input type="email" name="email" placeholder="Your Email" required>
+                                </div>
+                                <div class="textarea">
+                                    <textarea rows="5" cols="30" name="message" placeholder="Enter your remark" required></textarea>
+                                </div>
+                                <div class="button">
+                                    <input type="submit" value="Submit">
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+        
+    <div class="footer">
+        <p>&copy; 2024 weManage.  All Rights Reserved</p>
+            
+    </div>
+    
+    
+    <script src="script.js"></script>
+</body>
+</html>

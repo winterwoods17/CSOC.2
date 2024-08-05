@@ -1,0 +1,432 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 100%;
+    min-height: 100vh;
+    background-image: url('img/bc.jpg');
+    background-size: cover;
+    background-position: center;
+    padding: 10px 8%;
+}
+
+nav {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgb(0 0 0 / 50%);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+nav h1 {
+    color: #fff;
+}
+
+.logo {
+    width: 100px;
+    cursor: pointer;
+    padding: 5px 5px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    text-align: right;
+    padding-right: 10px;
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 10px 20px;
+    text-transform: uppercase;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    color: #007bff;
+}
+
+.box {
+    margin: 40px 0 0;
+    width: 100%;
+    height: 70vh;
+    display: flex;
+}
+
+.right, .left {
+    margin: 10px;
+    height: auto;
+}
+
+.right {
+    width: 50%;
+    height: 100%;
+    background-color: rgba(222, 232, 240, 0.5);
+}
+
+.left {
+    width: 50%;
+    height: 100%;
+    background-color: rgba(222, 232, 240, 0.5);
+}
+
+.right .project-container h1,
+.left .task-container h1 {
+    color: #194b88;
+    margin-bottom: 20px;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: 'Poppins', sans-serif;
+}
+
+.project-container, .task-container {
+    width: 100%;
+    max-width: 400px;
+    margin: 20px auto;
+}
+
+.project-input, .todo-input {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+#projectInput, #taskInput, #projectDate {
+    width: calc(100% - 120px);
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+#addProjectButton, #addTaskButton {
+    padding: 8px 12px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-left: 10px;
+    flex-shrink: 0;
+}
+
+#addProjectButton:hover, #addTaskButton:hover {
+    background-color: #0056b3;
+}
+
+ul#projectList, ul#taskList {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+ul#projectList li, ul#taskList li {
+    background-color: #f8f8f8;
+    margin-bottom: 8px;
+    padding: 10px;
+    border-radius: 4px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+button {
+    cursor: pointer;
+    border: none;
+    border-radius: 4px;
+    padding: 5px 10px;
+}
+
+button.delete {
+    background-color: #dc3545;
+    color: white;
+}
+
+button.delete:hover {
+    background-color: #c82333;
+}
+
+button.select {
+    background-color: #007bff;
+    color: white;
+}
+
+button.select:hover {
+    background-color: #0056b3;
+}
+
+button.edit {
+    background-color: #28a745;
+    color: white;
+    margin-right: 5px;
+}
+
+button.edit:hover {
+    background-color: #218838;
+}
+
+.box2, .boxe, .box3 {
+    margin: 100px 0 0;
+    width: 100%;
+    height: 70vh;
+    display: flex;
+    background-color: rgba(222, 232, 240, 0.5);
+}
+
+.box3 {
+    margin: 100px 0 70px;
+}
+
+.footer {
+    width: 100%;
+    height: 60px;
+    background-color: #0d1b2a;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer p {
+    margin: 0;
+    text-decoration: underline;
+    text-underline-offset: 3px;
+}
+
+.boxe {
+    margin-top: 100px;
+    color: white;
+    padding: 20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.metric {
+    margin: 10px;
+    padding: 20px 25px;
+    border: 1px solid white;
+    border-radius: 10px;
+    font-size: 24px;
+    background-color: #007bff;
+    color: #ffffff;
+    transition: transform 0.2s;
+}
+
+.metric:hover {
+    transform: scale(1.05);
+}
+
+#tasksCompleted {
+    background-color: #28a745;
+}
+
+#projectsCompleted {
+    background-color: #dc3545;
+}
+
+button.complete {
+    background-color: #28a745;
+    color: white;
+}
+
+button.complete:hover {
+    background-color: #218838;
+}
+
+.boxe {
+    margin-top: 100px;
+}
+
+.box2 {
+    margin: 40px 0 0;
+    width: 100%;
+    height: auto;
+    background-color: rgba(222, 232, 240, 0.5);
+    padding: 20px;
+}
+
+.box2 h2 {
+    text-align: center;
+    color: #194b88;
+    margin-bottom: 20px;
+}
+
+#deadlineTable {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+#deadlineTable th, #deadlineTable td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: center;
+}
+
+#deadlineTable th {
+    background-color: #007bff;
+    color: white;
+}
+
+#deadlineTable td {
+    background-color: #f8f8f8;
+}
+
+#deadlineTable tr:nth-child(even) td {
+    background-color: #e9ecef;
+}
+
+#deadlineTable button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#deadlineTable button:hover {
+    background-color: #0056b3;
+}
+
+.box3 {
+    padding: 40px 0;
+    background-color: rgba(222, 232, 240, 0.5);
+}
+
+.contact {
+    color: #333;
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.ccon {
+    padding: 20px;
+}
+
+.ccon h1 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: #1e3c72;
+}
+
+.items {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+}
+
+.contact-info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    flex: 1;
+}
+
+.contact-item {
+    text-align: center;
+    width: 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 200px;
+    padding: 10px;
+}
+
+.icon-circle {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #1e3c72;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.icon-circle img {
+    width: 25px;
+    height: 25px;
+}
+
+.contact-item h3 {
+    font-size: 16px;
+    margin: 10px 0;
+    color: #333;
+}
+
+.contact-item p, .contact-item a {
+    font-size: 14px;
+    color: #333;
+    text-decoration: none;
+}
+
+.contact-item a:hover {
+    text-decoration: underline;
+}
+
+.for {
+    flex: 1;
+    min-width: 350px;
+    max-width: 400px;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 10px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 40px;
+}
+
+.for input[type="text"], .for input[type="email"], .for textarea {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin-bottom: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 14px;
+    background-color: rgba(222, 232, 240, 0.5);
+    color: #333;
+}
+
+.for input[type="submit"] {
+    background-color: #1e3c72;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.for input[type="submit"]:hover {
+    background-color: #163b5f;
+}
+
+.icon-circle:hover {
+    transform: scale(1.2);
+}
+
+.icon-circle:hover img {
+    transform: scale(1.1);
+}
+
+
+
+
